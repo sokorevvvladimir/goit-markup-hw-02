@@ -1,4 +1,11 @@
 :root {
+  --primary-color: #ffffff;
+  --secondary-color: #2f303a;
+  --accent-color: #2196f3;
+  --our-team: #f5f4fa;
+
+  --primary-text: #212121;
+  --secondary-text: #757575;
 }
 
 body {
@@ -6,8 +13,61 @@ body {
 }
 
 .logo {
+  color: #000;
   font-family: "Raleway", sans-serif;
   text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo.footer {
+  color: #fff;
+}
+.web {
+  color: var(--accent-color);
+}
+
+.header {
+  background-color: var(--primary-color);
+}
+
+.current {
+  color: var(--accent-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.nav-links-item {
+  color: var(--primary-text);
+  text-decoration: none;
+}
+
+.nav-links-item .contacts-links-item:hover {
+  color: var(--accent-color);
+}
+
+.hero {
+  background-color: var(--secondary-color);
+}
+
+.peculiarities {
+  background-color: var(--primary-color);
+}
+
+.scope {
+  background-color: var(--primary-color);
+}
+
+.team {
+  background-color: var(--our-team);
+}
+
+.footer {
+  background-color: var(--secondary-color);
 }
 
 .address .address-item {
