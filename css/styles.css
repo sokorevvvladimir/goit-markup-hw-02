@@ -42,7 +42,7 @@ body {
 
 /* Header */
 
-.item {
+.link {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -51,7 +51,7 @@ body {
   text-decoration: none;
 }
 
-.nav-links {
+.site-nav {
   color: var(--secondary-text);
 }
 
@@ -59,9 +59,9 @@ body {
   color: var(--primary-text);
 }
 
-.nav-links:hover,
+.site-nav:hover,
 .contacts-list:hover,
-.nav-links:focus,
+.site-nav:focus,
 .contacts-list:focus {
   color: var(--accent-color);
 }
@@ -89,17 +89,37 @@ body {
 
 .section-title {
   color: var(--secondary-text);
-  font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
+/* Portfolio */
+
+.portfolio-title {
+  color: var(--secondary-text);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-item {
+  color: var(--primary-text);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
+/* Button types */
+
 .order-services {
   color: var(--primary-color);
   background-color: var(--accent-color);
-  font-weight: bold;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   display: flex;
@@ -109,16 +129,33 @@ body {
   cursor: pointer;
 }
 
+.filter {
+  color: var(--secondary-text);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
 .order-services:hover,
 .order-services:focus {
   background-color: #188ce8;
+}
+
+.filter:hover,
+.filter:focus {
+  color: var(--primary-color);
+  background-color: var(--accent-color);
 }
 
 /* Peculiarities */
 
 .subheader {
   color: var(--secondary-text);
-  font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -138,27 +175,30 @@ body {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 .teammates-occupation {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 /* address */
-.address.item {
+.address.link {
   color: var(--primary-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.contacts.item {
+.contacts.link {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+.address.link:hover,
+.contacts.link:hover,
+.address.link:focus,
+.contacts.link:focus {
+  color: var(--accent-color);
 }
