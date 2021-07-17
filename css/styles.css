@@ -4,12 +4,19 @@
   --accent-color: #2196f3;
   --our-team: #f5f4fa;
 
-  --primary-text: #212121;
-  --secondary-text: #757575;
+  --primary-text: #757575;
+  --secondary-text: #212121;
 }
 
 body {
+  color: var(--primary-text);
+  background-color: var(--primary-color);
   font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .logo {
@@ -22,18 +29,10 @@ body {
   letter-spacing: 0.03em;
 }
 
-.logo.footer {
+.footer .logo {
   color: #fff;
 }
 .web {
-  color: var(--accent-color);
-}
-
-.header {
-  background-color: var(--primary-color);
-}
-
-.current {
   color: var(--accent-color);
 }
 
@@ -41,36 +40,124 @@ body {
   list-style: none;
 }
 
-.nav-links-item {
-  color: var(--primary-text);
+/* Header */
+
+.item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.02em;
   text-decoration: none;
 }
 
-.nav-links-item .contacts-links-item:hover {
+.nav-links {
+  color: var(--secondary-text);
+}
+
+.contacts-list {
+  color: var(--primary-text);
+}
+
+.nav-links:hover,
+.contacts-list:hover,
+.nav-links:focus,
+.contacts-list:focus {
   color: var(--accent-color);
 }
 
-.hero {
-  background-color: var(--secondary-color);
+.current {
+  color: var(--accent-color);
 }
 
-.peculiarities {
-  background-color: var(--primary-color);
-}
+/* Hero */
 
-.scope {
-  background-color: var(--primary-color);
-}
-
-.team {
-  background-color: var(--our-team);
-}
-
+.hero,
 .footer {
   background-color: var(--secondary-color);
 }
 
-.address .address-item {
-  text-decoration: none;
-  font-style: normal;
+.hero-header {
+  color: var(--primary-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  color: var(--secondary-text);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.order-services {
+  color: var(--primary-color);
+  background-color: var(--accent-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.order-services:hover,
+.order-services:focus {
+  background-color: #188ce8;
+}
+
+/* Peculiarities */
+
+.subheader {
+  color: var(--secondary-text);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* Scope */
+
+/* Our team */
+
+.team {
+  background-color: var(--our-team);
+}
+.teammates {
+  color: var(--secondary-text);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.teammates-occupation {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* address */
+.address.item {
+  color: var(--primary-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.contacts.item {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
