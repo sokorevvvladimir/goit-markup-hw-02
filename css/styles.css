@@ -8,6 +8,14 @@
   --secondary-text: #212121;
 }
 
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 body {
   color: var(--primary-text);
   background-color: var(--primary-color);
